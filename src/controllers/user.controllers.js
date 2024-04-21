@@ -56,6 +56,8 @@ const registerUser = asyncHandler(async (req, res) => {
         coverImage: coverImage?.url || "",
     })
 
+    console.log("user: ", user);
+
     const createdUser = await User.findById(user._id).select(
         "-password -refreshToken"
     )
