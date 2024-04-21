@@ -5,8 +5,6 @@ const asyncHandler = (requestHandler) => {
     }
 }
 
-function test (){
-    console.log("Hello")
-}
 
-export  {asyncHandler, test} 
+
+export  {asyncHandler}
